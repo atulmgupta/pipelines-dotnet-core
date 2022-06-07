@@ -28,3 +28,9 @@ steps:
     packageType: sdk
     version: 5.0.17
     installationPath: $(Agent.ToolsDirectory)/dotnet
+
+- task: UseDotNet@2
+  displayName: 'Use .NET Core sdk Anonymous'
+  inputs:
+    packageType: sdk    
+    installationPath: $(Agent.ToolsDirectory)/dotnet
